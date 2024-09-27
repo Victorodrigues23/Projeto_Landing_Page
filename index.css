@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     color: var(--text-color);
 }
 
@@ -82,6 +82,12 @@ h1 {
     margin: 20px 0;
 }
 
+.SignAddress {
+    color: white;
+    text-decoration:underline;
+    font-weight: lighter;
+}
+
 input[type="text"] {
     padding: 10px;
     width: 80%;
@@ -92,7 +98,7 @@ input[type="text"] {
 }
 
 a {
-    color: var(--primary-color);
+    color: #eb1700;
     font-weight: bold;
     text-decoration: none;
     display: block;
@@ -126,20 +132,41 @@ a {
     margin-bottom: 10px;
 }
 
-.segunda_section,
-.terceira_section {
+.segunda_section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 0 0 0;
+}
+
+.terceira_section {
+    background-color: #fff0ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    /* background-color: var(--secondary-color); */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0 0 0;
+}
+
+
+
+.buttonGetApp {
+    border-radius: 50px;
+    background-color: #eb1700;
+    color: white;
 }
 
 .segunda_section img,
 .terceira_section img {
-    max-width: 300px;
+    /* max-width: 300px; */
+    width: 500px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
