@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ff4757;
+    --primary-color: #9f1621;
     --secondary-color: #fff;
     --text-color: #333;
     --border-color: #ccc;
@@ -15,18 +15,41 @@ body {
 }
 
 .cabeçalho {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     color: var(--secondary-color);
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.Logo {
+    margin-top: auto;
+
 }
 
 #card1 {
     display: flex;
-    
+    justify-content: flex-end;
+    position: absolute;
+    top: 65px;
+    left: 1250px;
     align-items: center;
     padding: 0 20px;
+}
+
+.button1 {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.button2 {
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
 }
 
 .buttons {
@@ -69,7 +92,8 @@ input[type="text"] {
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
     text-decoration: none;
     display: block;
     margin-top: 10px;
@@ -102,7 +126,8 @@ a {
     margin-bottom: 10px;
 }
 
-.segunda_section, .terceira_section {
+.segunda_section,
+.terceira_section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,7 +137,8 @@ a {
     margin: 20px 0;
 }
 
-.segunda_section img, .terceira_section img {
+.segunda_section img,
+.terceira_section img {
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -148,12 +174,14 @@ footer {
         margin: 10px 0;
     }
 
-    .segunda_section, .terceira_section {
+    .segunda_section,
+    .terceira_section {
         flex-direction: column;
         align-items: center;
     }
 
-    .segunda_section img, .terceira_section img {
+    .segunda_section img,
+    .terceira_section img {
         max-width: 100%;
     }
 }
