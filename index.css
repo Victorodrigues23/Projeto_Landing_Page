@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 65px;
+    top: 15px;
     left: 1250px;
     align-items: center;
     padding: 0 20px;
@@ -75,13 +75,21 @@ button:hover {
 }
 
 h1 {
-  margin: 20px 0;
+  margin: 65px 0 5px;
 }
 
 #card2 {
   margin: 20px 0;
 }
 
+.arrow-button { 
+    position: absolute;
+    top: 206px;
+    left: 871px;
+    background-color: red;
+    border-radius: 100%;
+    padding: 0.1;
+}
 .SignAddress {
     color: white;
     text-decoration:underline;
@@ -90,11 +98,16 @@ h1 {
 
 input[type="text"] {
   padding: 10px;
-  width: 80%;
-  max-width: 400px;
+  width: 350px;
+  height: 25px;
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* background-image: url(img/icone-de-localisation-noire.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  font-size: 15px; */
 }
 
 a {
@@ -129,6 +142,11 @@ a {
 
 .hero:hover {
   transform: translateY(-5px);
+}
+
+.StartSignGet {
+    color: #ec3948;
+    font-weight: bold;
 }
 
 .hero img {
@@ -196,7 +214,6 @@ footer {
     display: flex;
     justify-content: space-around;
     text-align: left;
-    /* align-items: center; */
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 13px;
   }
@@ -216,6 +233,24 @@ footer {
     display: block;
     color: #e0e0e0;
     margin-top: 48px;
+}
+
+.principal1 {
+    display: flex;
+    text-align: left;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    gap: 75px;
+    margin-left: 60px;
+}
+
+.others{
+    display: flex;
+    justify-content: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    align-items: center;
+    gap: 30px;
 }
 
   /* From Uiverse.io by elisapi */
